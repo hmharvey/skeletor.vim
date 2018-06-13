@@ -8,12 +8,12 @@ This is the _vim-only_ repository of the [Skeletor-Syntax](https://github.com/ra
 If you use vim + [**pathogen**](https://github.com/tpope/vim-pathogen):
 ```bash
 cd ~/.vim/bundle && \
-git clone https://github.com/saltcontent/skeletor.vim.git
+git clone https://github.com/skreek/skeletor.vim.git
 ```
 
 if you use native [**vim 8 pack feature**](https://shapeshed.com/vim-packages/):  
 ```bash
-git clone https://github.com/salttt/skeletor.vim.git ~/.vim/pack/my-plugins/start/skeletor.vim
+git clone https://github.com/skreek/skeletor.vim.git ~/.vim/pack/my-plugins/start/skeletor.vim
 ```
 
 or just move the [skeletor.vim](https://github.com/salttt/skeletor.vim/blob/master/colors/skeletor.vim) file into `~/.vim/colors` and add the following lines into your `.vimrc` file:  
