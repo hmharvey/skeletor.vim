@@ -42,7 +42,6 @@ let s:skeletor.blue          = ['#93b4ff', 75]  " 147 180 255 | 222° 100%  79% 
 let s:skeletor.bluegray      = ['#7b94a5', 103] " 123 148 165 | 204°  19%  56% |
 let s:skeletor.green         = ['#84fba2', 121] " 132 251 16  | 135°  94%  75% |
 let s:skeletor.verylightgray = ['#c5c8c6', 251] " 197 200 198 | 140°   3%  78% |
-let s:skeletor.background    = ['#2b2836', 236] "  43 40 54   | 253°  15%  18% |
 let s:skeletor.comments      = ['#655e7f', 60]  " 101 94 127  | 253°  15%  43% |
 let s:skeletor.cursor		 = ['#423e53', 239] "  66 62 83   | 251°  14%  28% |
 let s:skeletor.cursor2		 = ['#383546', 237] "  56 53 70   | 251°  14%  24% |
@@ -59,12 +58,6 @@ let s:green = s:skeletor.green
 let s:vlgray = s:skeletor.verylightgray
 let s:fg1 = s:skeletor.comments
 let s:fg0 = s:skeletor.lightblue
-if g:no_bg == 0
-	let s:bg = s:skeletor.background
-else
-	let s:bg = ['NONE', 'NONE']
-endif
-let s:bg = s:skeletor.background
 let s:c = s:skeletor.cursor
 let s:c2 = s:skeletor.cursor2
 
@@ -123,7 +116,7 @@ endfunction
 " }}}
 " Basic: {{{
 
-call s:hi('Normal', s:fg0, s:bg)
+" call s:hi('Normal', s:fg0, s:bg)
 " normal text
 " background
 
@@ -254,7 +247,7 @@ call s:hi('CursorColumn', s:none, s:c)
 " the screen column that the cursor is in when
 " 'cursorcolumn' is set
 
-call s:hi('CursorLineNr', s:fg0, s:bg)
+" call s:hi('CursorLineNr', s:fg0, s:bg)
 " Like LineNr when 'cursorline' or 'relativenumber' is set for
 " the cursor line
 
